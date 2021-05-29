@@ -17,7 +17,7 @@
 
 # <a name="description">
 # Description
-A personal website that will display blog posts of channeled messages for users. 
+A personal website that will display insights channeled from the divine for users. Only take what resonates.
 </a><br><br>
 [Table Of Contents](#table-contents)
 
@@ -30,7 +30,7 @@ Users can register, login or retrieve login information from clicking forgot pas
 ![Homepage](https://github.com/CelesteRCodes/blog/blob/master/static/img/purplestars.jpg)   
 
 **Add New User** <br><br>
-Registers new user and creates a new database for user to create a profile and comment on blog posts
+Registers new user and adds user to database for user to create a profile and comment on blog posts
  
 ![Add New User](https://github.com/CelesteRCodes/blog/blob/master/static/img/purplestars.jpg) 
 
@@ -85,7 +85,7 @@ User can now navigate to `localhost:5000/` to access <strong>Celestial Channels<
 
 # <a name="support"> 
 # Support
-Feel free to email me with any questions at: celestercodes@gmail.com 
+Feel free to email me with any questions at: celestercodes@gmail.com <br>
 Bookings: cellesstialbechanneling@gmail.com
 </a><br><br>
 [Table Of Contents](#table-contents)
@@ -107,9 +107,6 @@ Initial release TBA
 # Project Status
 Currently Updating 
 
-# Acknowledgments
-
-
 
 # License
 This project is licensed under the terms of the MIT license. <br>
@@ -118,5 +115,5 @@ Copyright 2021, Celeste Rowe, All rights reserved.
 
 # <a name="about-me">
 # About Me
-Celeste is an ICU RN, new to Full Stack Developing and she also channels messages from the divine. Being a lifelong learner means you'll also dabble in some teaching when it comes to sharing your knowledge. This blog is just about that; sharing insights channeled from the divine. <br><br>
+Celeste is an ICU RN, Full Stack Developer (newbie) and she also channels messages from the divine. Being a lifelong learner means you'll also dabble in some teaching when it comes to the sharing of knowledge. This blog is just about that, sharing insights channeled from the divine. Only take what resonates. <br><br>
 [Table Of Contents](#table-contents)
