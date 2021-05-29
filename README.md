@@ -1,7 +1,7 @@
 
 # Celestial Channels
 
-![Celestial Channels](https://github.com/CelesteRCodes/blog/blob/master/static/img/starsbg.jpg) 
+![Celestial Channels](https://github.com/CelesteRCodes/blog/blob/master/static/img/purplestars.jpg) 
 
 # <a name="table-contents">
 # Table of Contents
