@@ -30,13 +30,19 @@ Users can register, login or retrieve login information from clicking forgot pas
 ![Homepage](https://github.com/CelesteRCodes/blog/blob/master/static/img/purplestars.jpg)   
 
 **Add New User** <br><br>
-Registers new user and creates a new database for user to add/update plants and their logs 
+Registers new user and creates a new database for user to create a profile and comment on blog posts
  
 ![Add New User](https://github.com/CelesteRCodes/blog/blob/master/static/img/purplestars.jpg) 
 
-**Show Channeled Messages** <br><br>
+**Show About Me** <br><br>
+Shows bio, links to other profiles, links to booking for services
 
-![Channeled Messages](https://github.com/CelesteRCodes/blog/blob/master/static/img/purplestars.jpg)
+![About Me](https://github.com/CelesteRCodes/blog/blob/master/static/img/purplestars.jpg)
+
+**Show Channeled Messages** <br><br>
+Shows channeled messages in blog posts, most recent first, links for older posts
+
+![Blog](https://github.com/CelesteRCodes/blog/blob/master/static/img/purplestars.jpg)
  
 </a><br>
 [Table Of Contents](#table-contents)
@@ -68,11 +74,11 @@ Registers new user and creates a new database for user to add/update plants and 
         `createdb name-of-db` (create your database)<br>
         `psql name-of-db` (to see your db/tables) <br>
         `python3 model.py` <br>
-        `python3 seed.py`
+        `python3 seed.py` (seeds db with tester data)
 * Run the app: <br>
         `python3 server.py`
         <br><br>
-User can now navigate to `localhost:5000/` to access <strong>Grow Better</strong>
+User can now navigate to `localhost:5000/` to access <strong>Celestial Channels</strong>
 </a><br><br>
 [Table Of Contents](#table-contents)
 
