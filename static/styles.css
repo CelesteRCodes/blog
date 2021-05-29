@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+    background-image: url("/static/img/starsbg.jpg");
+    opacity: 0.6;
+    background-size: cover;
+    opacity: 1;  
+  }
+
+  .imgcontainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  img {
+    border-radius: 20px 20px 20px 20px;
+    border: solid;
+    border-style: round;
+  }
+
+  .header {
+    color: white;
+    text-shadow: 0px 0px 6px purple;
+    outline: 2px solid white;
+    
+    font-size: 25px;
+  }
+  
+  h1, h2 {
+    text-shadow: 0px 6px 8px purple;
+  }
+
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px purple;
+  }
+
+  form {
+    text-align: center;
+    display: inline-block;
+    display: grid;  
+  }
+
+  button {
+    background-color: #8a128aad; 
+    width: 15%;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: solid;
+    border-style: round;
+    border-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;  
+  }
+
+table, th, td {
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: #000 2px 2px 2px;
+}

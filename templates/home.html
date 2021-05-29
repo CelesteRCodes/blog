@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<head>
+  
+
+
+  <body>
+
+  <figure class="imgcontainer">
+      <img src="\static\img\purplestars.jpg" width="150" height="200">
+    </figure>
+  
+    <center>
+      <a href="/show-new-user-form"><button type="submit">Register New User</button></a>
+      </center>
+  <br>
+
+  <form action="/login" method="post">
+    
+    <center><div class="formcontainer">
+      <label for="uname"><strong>Username</strong></label><br>
+      <input type="text" placeholder="Enter Username" name="username" required>
+  
+      <br><br>
+      <label for="psw"><strong>Password</strong></label><br>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      <br><br>
+
+      <input type="checkbox" checked="checked" name="remember"><strong> Remember me</strong>
+      </label>
+      <br><br>
+
+      <button type="submit"><a href="/show-user-plants"></a>Login</button>
+      <label><br><br>
+        
+     </div></center>   
+    </form>  
+
+    
+   <center>
+    
+      <a href="/show-forgotpw"><button type="psw">Forgot password?</button></a>
+    
+    </center>
+  </body>
+      
+{% endblock %}
+

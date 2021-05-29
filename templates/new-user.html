@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<head>
+  <center><h2><a>Hi, New User! </a></h2></center> 
+</head>
+
+<body>
+  <div>
+    <center><h3>Sign up here:</h3></center>
+   
+    <form action="/process-new-user-form" method='POST' id="new-user-form">
+      <center><div class="form-group">
+      <br>
+      <label><strong>Email</strong> <br>
+        
+        <input class="form-control" type="text" name="email" id="entry-field" placeholder="Email">
+        
+      </label><br><br>
+
+      <label><strong>Username</strong> <br>
+        
+        <input class="form-control" type="text" name="username" id="entry-field" placeholder="Username">
+        
+      </label><br><br>
+
+      <label><strong>Password</strong> <br>
+        <input class="form-control" type="password" name="password" id="entry-field" placeholder="Password">
+        
+      </label><br><br>
+
+      
+     <button type="submit"><a href="/process-new-user-form"></a>Add New User</button>
+      <br><br>
+
+      
+      </div>
+      </center>
+
+    </form>
+    <br> 
+    
+    <center><a href="/login"><button type="cancel">Cancel</button></a></center>
+    
+</body>
+
+{% endblock %}
