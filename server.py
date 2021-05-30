@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, redirect, session
 
 # from datetime import datetime
 
-# from jinja2 import StrictUndefined
+from jinja2 import StrictUndefined
 
 import flash
 
@@ -19,7 +19,7 @@ app.secret_key = 'celesteisprosperous'
 
 
 @app.route('/')
-def home():
+def show_homepage():
     """Show homepage."""
 
     return render_template('home.html')
@@ -52,6 +52,11 @@ def show_login():
         # in the database, the homepage with the login form 
         # will be loaded for the user to try again or to 
         # register a new user
+
+
+# should have an admin log in function where the blog-base.html has an option to add posts (a long comment)
+# can add a table to model.py for blog posts
+    # columns: post/comment, timestamp, title
 
 @app.route('/show-forgotpw', methods=['GET', 'POST'])
 def show_forgotpw():
@@ -111,7 +116,7 @@ def process_new_user_form():
 # after user clicks submit on the page
 
 @app.route('/show-blog-posts-page')
-def homepage():
+def show_blog_posts():
     """Show blog posts page."""
 
 # will need crud function like get_blog_posts but only wanting to show one post (most recent)
@@ -119,6 +124,11 @@ def homepage():
 
     return render_template('blog-base.html')
 
+@app.route('/show-about-me')
+def show_about_me():
+    """Show creator's about me page."""
+
+    return render_template('about-me.html')
 
 
 if __name__ == '__main__':
