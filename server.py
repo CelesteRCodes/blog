@@ -37,7 +37,7 @@ def show_login():
     user = crud.get_user_by_username(username)
     
     if user and password == user.password:
-        session["id"] = user.id
+        session["id"] = username
         return redirect('/show-blog-posts-page')
     else:
         return redirect('/') 
@@ -116,7 +116,7 @@ def process_new_user_form():
 # after user clicks submit on the page
 
 @app.route('/show-blog-posts-page')
-def show_blog_posts():
+def show_blog_posts_page():
     """Show blog posts page."""
 
 # will need crud function like get_blog_posts but only wanting to show one post (most recent)
@@ -129,6 +129,23 @@ def show_about_me():
     """Show creator's about me page."""
 
     return render_template('about-me.html')
+
+@app.route('/show-tarot-page')
+def show_tarot_page():
+    """Show tarot page."""
+
+    return render_template('tarot.html')
+
+    # will need another route possibly to process any
+    # comments from user entered in the form on tarot page (pending)
+
+@app.route('/show-booking-page')
+def show_booking_page():
+    """Show booking page."""
+
+    return render_template('booking.html')
+
+    # will need another route to process the booking form 
 
 
 if __name__ == '__main__':

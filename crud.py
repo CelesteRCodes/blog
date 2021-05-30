@@ -35,7 +35,7 @@ def get_user_by_user_id(user_id):
     
     return user_id
 
-def store_admin(admin_name, admin_email, admin_password):
+def store_admin(id, admin_name, admin_email, admin_password, status, photo_url):
     """ 
     For example:
 
@@ -43,7 +43,7 @@ def store_admin(admin_name, admin_email, admin_password):
 
     [<User 12>]
     """
-    admin = Admin(admin_name = admin_name, admin_email = admin_email, 
+    admin = Admin(id=id, admin_name = admin_name, admin_email = admin_email, 
             admin_password = admin_password, status=status, photo_url=photo_url)
     
     db.session.add(admin)
@@ -60,7 +60,7 @@ def create_blogpost(blog_id, timestamp, title=None, photo_url=None,
     [<BlogPost 12>] 
     """ 
 
-    new_entry = BlogPost(blog_id=blog_id, timestamp=timestamp, 
+    new_entry = BlogPosts(blog_id=blog_id, timestamp=timestamp, 
         title=title, photo_url=photo_url, blogpost=blogpost)
 
     db.session.add(new_entry)
