@@ -2,35 +2,78 @@
 {% block content %}
 <head>
 
-<center><h2><a>Channeled Messages</a></h2></center> 
 
-    
+  <link rel="stylesheet" href= "\static\blog.css">
+  <link href= "\static\blog.css" rel="stylesheet" type="text/css">
+  
 </head>
 
 <body>
-    <figure class="imgcontainer">
-        <img src="\static\img\suntarot.jpg" width="150" height="200">
-      </figure>
-
-    <center><p>What makes me feel like the Sun tarot card? <br><br>
-    Freshly baked cookies, farm to table ingredients, unexpected gifts, <br>
-    letting the waters carry my kayak while the sun shines down on me, <br>
-    buying skincare products and household goods, painting, <br>
-    gardening and getting my hands dirty, yoga and swimming, dancing and hula hooping, <br>
-    nature walks with my dog, traveling to new locations, museum visits and all kinds of tours, <br>
-    a good book, tasty tea or golden milk, creating/building something, <br>
-    successfully recreating a restaurant dish, snuggling up in my warm bed after a long day, <br>
-    learning something new or building on old skills, Mary Jane in all of her fabolousness, <br>
-    music (especially old school R&B and Latin Jazz), concerts and festivals, <br>
-    talking for hours with a friend, long drives where I'm the passenger, <br>
-    new clothing but specifically lounge wear, achieiving a personal goal, <br>
-    laying out on the beach and letting the waves lull me to sleep.
-    </p></center>
     
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Bornday Fasting</h2>
+      <h5>Why I Fast and When, May 21, 2021</h5>
+      <div class="blogimgcontainer">
+        <img src="\static\img\fasting.jpg" width="150" height="200">
+      </div>
+      <p>I've found that fasting has brougt me more self-discipline. <br>
+        When it came to changing my diet, that was definitley lacking. <br>
+        I'm also learning to be consistent with myself and in my actions.</p>
+    </div>
 
-</body>
+    <div class="card">
+      <h2>The Sun Tarot Card</h2>
+      <h5>What makes me feel like the sun?, May 18, 2021</h5>
+      <div class="blogimgcontainer">
+        <img src="\static\img\suntarot.jpg" width="150" height="200">
+      </div>
+      <p>What makes me feel like the Sun tarot card? <br><br>
+        Freshly baked cookies, farm to table ingredients, unexpected gifts, <br>
+        letting the waters carry my kayak while the sun shines down on me, <br>
+        buying skincare products and household goods, painting, <br>
+        gardening and getting my hands dirty, yoga and swimming, dancing and hula hooping, <br>
+        nature walks with my dog, traveling to new locations, museum visits and all kinds of tours, <br>
+        a good book, tasty tea or golden milk, creating/building something, <br>
+        successfully recreating a restaurant dish, snuggling up in my warm bed after a long day, <br>
+        learning something new or building on old skills, Mary Jane in all of her fabolousness, <br>
+        music (especially old school R&B and Latin Jazz), concerts and festivals, <br>
+        talking for hours with a friend, long drives where I'm the passenger, <br>
+        new clothing but specifically lounge wear, achieiving a personal goal, <br>
+        laying out on the beach and letting the waves lull me to sleep.
+        </p>
+    </div>
+  </div>
 
-   
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="blogimgcontainer">
+        <img src="\static\img\profilepic.jpg" width="150" height="200">
+      </div>
+      <p>Celeste has been channeling messages through tarot <br> 
+        for three years and through song for one year.<br>
+        When it comes to her dreams and channeling just through speech, all of her life. <br><br>
+        She works as a Full Stack Developer by day and ICU RN by night.<br>
+        A life long learner and 'Jane-of-all-trades' in the making. <br><br>
+        Hobbies: reading, cooking/baking, gardening, random arts and crafts and kayaking. <br>
+        She has also founded GrowGang, who's end goal is <br> to become the world's first community garden!
+        <br></p>
+    </div>
+
+    <!-- <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+     -->
+    
+    
+  </div>
+</div>
+
         
   <form action="/show-blog-posts-page" method='post' id="entry-form" enctype="multipart/form-data">
      <center><div class="container"> 
@@ -42,9 +85,12 @@
   </form>
   </div></center>
 
-
+</body>
 
      <center>
+      <p>Follow Me:<br>
+      <a href="https://twitter.com/cellesstial"><button>@cellesstial</button></a>
+      </p><br><br>
       <a href="/show-about-me"><button>About Me</button></a><br>
       <a href="/show-booking-page"><button type="cancel">Book A Reading</button></a><br>
       <a href="/show-tarot-page"><button type="cancel">Weekly Energy</button></a><br>

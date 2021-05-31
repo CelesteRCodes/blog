@@ -124,6 +124,17 @@ def show_blog_posts_page():
 
     return render_template('blog-base.html')
 
+
+@app.route('/process-blog-comment-form', methods=['GET', 'POST'])
+def process_blog_comment_form():
+    """ Process blog comment form."""
+        
+
+    response = request.post('http://localhost:5000/show-blog-posts-page', params={'limit':0})
+   
+    print(response.text)
+
+
 @app.route('/show-about-me')
 def show_about_me():
     """Show creator's about me page."""
