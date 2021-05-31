@@ -2,24 +2,107 @@
 {% block content %}
 <head>
 
-
+    <figure class="imgcontainer">
+        <img src="\static\img\pricelist.jpg" width="700" height="350">
+      </figure>
+    
 
     
 </head>
 
 <body>
 
-    <center><h2><a>Book A Reading Here</a></h2>
+    <center><h3>Booking Info: </h3>
+    <p>Please completely fill out form to book reading. <br>
+    Will receive an email confimation of booking within 24 hrs of submitting form.</p></center> 
 
-    <p>Booking Info: </p></center> 
+  <form action="/show-booking-page" method='post' id="entry-form" enctype="multipart/form-data">
+    <center><div class="form-group">
+       <br>
+       <label><strong>Name</strong> <br>
+         <input class="form-control" type="text" name="name" id="entry-field" placeholder="Name">  
+       </label>
+       <br><br>
+ 
+       <label><strong>Email Address</strong> <br>
+         <input class="form-control" type="text" name="email" id="entry-field" placeholder="Email">
+       </label>
+       <br><br>
+ 
+       <label><strong>Type of Reading Desired?</strong></label><br>
+       <input type="radio" id="reading-type" name="lovelife" value="lovelife">
+       <label for="indoor">Romance</label><br>
+
+       <input type="radio" id="reading-type" name="finance" value="finance">
+       <label for="indoor">Career/Finance</label><br>
+
+       <input type="radio" id="reading-type" name="general" value="general">
+       <label for="indoor">General/Current Energy</label>
+       <br><br>
+
+
+       <label><strong>Reading Format Desired</strong></label><br>
+       <select name="reading">
+         <option value="None"></option>
+         <option value="4 Card Spread">4 Card Spread ($33.33)</option>
+         <option value="8 Card Spread">8 Card Spread ($66.66)</option>
+         <option value="12 Card Spread">12 Card Spread ($99.99)</option>
+         <option value="Emergency">Emergency/Same Day ($122.22)</option>
+         <option value="30 Min Video">30 Min Video Chat ($88.88)</option>
+         <option value="1 Hr Video">1 Hr Video Chat ($111.11)</option>
+       </select>
+       <br><br>
+
+        <label><strong>Must Have Deck in Spread?</strong></label><br>
+        <input type="radio" id="deck" name="romance" value="romance">
+        <label for="indoor">Romance Angels</label><br>
+
+        <input type="radio" id="deck" name="energy" value="energy">
+        <label for="indoor">Energy Oracles</label><br>
+
+        <input type="radio" id="deck" name="akashic" value="akashic">
+        <label for="indoor">The Akashic Tarot</label><br>
+
+        <input type="radio" id="deck" name="cleo" value="cleo">
+        <label for="outdoor">Ms. Cleo's Tarot</label><br>
+
+        <input type="radio" id="deck" name="goddess" value="goddess">
+        <label for="outdoor">Coddess Tarot</label><br>
+
+        <input type="radio" id="deck" name="hoodoo" value="hoodoo">
+        <label for="outdoor">The Hoodoo Tarot</label><br>
+
+        <input type="radio" id="deck" name="herb" value="herb">
+        <label for="outdoor">The Herbcrafter's Tarot</label>
+        <br><br>
+ 
+         <label><strong>Type of Payment</strong></label><br>
+         <select name="payment">
+           <option value="None"></option>
+           <option value="Cashapp">Cashapp ($lessloveee)</option>
+           <option value="Paypal">Paypal(paypal.me/celesstiall)</option>
+           <option value="Zelle">Zelle</option>
+        </select>
+        <br><br>
+ 
+      <label><strong>Comment</strong> <br>(please denote any other desired decks)<br><br>
+         <input class="form-control" type="text" name="booking-comment" 
+         id="entry-field" placeholder="Comment/Concerns">
+       </label>
+       <br><br>
+
+       <button type="submit">Submit</button><br>
+        </form> </center>
+ 
+
 </body>
 
 <center>
     <div class="container">
      
-      <a href="/show-about-me"><button>About Me</button></a>
-      <a href="/show-blog-posts-page"><button type="cancel">Blog Posts</button></a>
-      <a href="/show-tarot-page"><button type="cancel">Weekly Energy</button></a>
+      <a href="/show-about-me"><button>About Me</button></a><br>
+      <a href="/show-blog-posts-page"><button type="cancel">Blog Posts</button></a><br>
+      <a href="/show-tarot-page"><button type="cancel">Weekly Energy</button></a><br>
       <a href="/"><button type="cancel">Logout</button></a>
 
      

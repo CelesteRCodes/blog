@@ -2,28 +2,56 @@
 {% block content %}
 <head>
 
-
+<center><h2><a>Channeled Messages</a></h2></center> 
 
     
 </head>
 
 <body>
+    <figure class="imgcontainer">
+        <img src="\static\img\suntarot.jpg" width="150" height="200">
+      </figure>
 
-    <center><h2><a>Channeled Messages</a></h2>
+    <center><p>What makes me feel like the Sun tarot card? <br><br>
+    Freshly baked cookies, farm to table ingredients, unexpected gifts, <br>
+    letting the waters carry my kayak while the sun shines down on me, <br>
+    buying skincare products and household goods, painting, <br>
+    gardening and getting my hands dirty, yoga and swimming, dancing and hula hooping, <br>
+    nature walks with my dog, traveling to new locations, museum visits and all kinds of tours, <br>
+    a good book, tasty tea or golden milk, creating/building something, <br>
+    successfully recreating a restaurant dish, snuggling up in my warm bed after a long day, <br>
+    learning something new or building on old skills, Mary Jane in all of her fabolousness, <br>
+    music (especially old school R&B and Latin Jazz), concerts and festivals, <br>
+    talking for hours with a friend, long drives where I'm the passenger, <br>
+    new clothing but specifically lounge wear, achieiving a personal goal, <br>
+    laying out on the beach and letting the waves lull me to sleep.
+    </p></center>
+    
 
-    <p>Blog Content: Channeled Messages </p></center> 
 </body>
 
-<center>
-    <div class="container">
-     
-      <a href="/show-about-me"><button>About Me</button></a>
-      <a href="/show-booking-page"><button type="cancel">Book A Reading</button></a>
-      <a href="/show-tarot-page"><button type="cancel">Weekly Energy</button></a>
+   
+        
+  <form action="/show-blog-posts-page" method='post' id="entry-form" enctype="multipart/form-data">
+     <center><div class="container"> 
+
+    <label for="comment">Comment:</label><br>
+    <input type="text" id="comment" name="comment" placholder="Comment"><br>
+    <button type="submit">Submit</button> 
+          <br><br>
+  </form>
+  </div></center>
+
+
+
+     <center>
+      <a href="/show-about-me"><button>About Me</button></a><br>
+      <a href="/show-booking-page"><button type="cancel">Book A Reading</button></a><br>
+      <a href="/show-tarot-page"><button type="cancel">Weekly Energy</button></a><br>
       <a href="/"><button type="cancel">Logout</button></a>
-      
+     </center> 
      
-      </div>
-</center>
+      
+
 
 {% endblock %}

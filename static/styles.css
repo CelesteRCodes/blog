@@ -6,10 +6,25 @@ html {
     opacity: 1;  
   }
 
+  /* input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+  } */
+
   .imgcontainer {
     display: grid;
     justify-items: center;
     align-items: center;
+  }
+
+  .container {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
   }
 
   img {
@@ -52,11 +67,11 @@ html {
     border: solid;
     border-style: round;
     border-color: white;
-    padding: 15px 32px;
+    padding: 10px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;  
+    font-size: 14px;  
   }
 
 table, th, td {
